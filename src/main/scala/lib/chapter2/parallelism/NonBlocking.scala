@@ -1,6 +1,8 @@
-package lib.chapter2
+package lib.chapter2.parallelism
 
 import java.util.concurrent.{Callable, CountDownLatch, ExecutorService}
+
+import lib.chapter2.Actor
 
 object NonBlocking {
 
