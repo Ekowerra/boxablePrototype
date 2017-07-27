@@ -1,9 +1,8 @@
-package lib.chapter4
+package lib.chapter4.iomonad
 
 import lib.chapter2.parallelism.NonBlocking.Par
 import lib.chapter3.applicative.Monad
-import lib.chapter4.Free.~>
-import lib.chapter4.IO.unit
+import lib.chapter4.iomonad.Free.~>
 
 /*
 Cette implémentation permet l'externalisation des outputs mais pas des inputs.

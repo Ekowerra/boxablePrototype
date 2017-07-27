@@ -1,7 +1,6 @@
-package lib.chapter4
+package lib.chapter4.iomonad
 
-import lib.chapter4.Console.ConsoleIO
-import lib.chapter4.Free.Tailrec
+import lib.chapter4.iomonad.Console.ConsoleIO
 
 case class Player(name : Player, score : Int)
 
