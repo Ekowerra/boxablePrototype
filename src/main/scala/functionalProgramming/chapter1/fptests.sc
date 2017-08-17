@@ -51,6 +51,8 @@ c.equals(c2)
 def compose[A, B, C](f: B => C, g: A => B): A => C =
   a => f(g(a))
 
+compose((x:Int)=> x+1, (y:Int) => y+1)(0)
+
 
 sealed trait List[+A] // `List` data type, parameterized on a type, `A`
 case object Nil extends List[Nothing] // A `List` data constructor representing the empty list
@@ -252,4 +254,4 @@ List.addInts(List(1,2,3), List(4,5,6))
 
 List.zipWith(List(1,2,3), List(4,5,6))(_ + _)
 
-List.hasSubsequence(List(1,2,3,4,5), List(1p)m)
+List.hasSubsequence(List(1,2,3,4,5), List(1))
